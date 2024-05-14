@@ -1,0 +1,7 @@
+{
+    "component": true,
+    "usingComponents": {
+        "recyclable":"../recyclable/index",
+        "recycler-item":"../recyclerItem/index"
+    }
+}

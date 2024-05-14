@@ -1,0 +1,9 @@
+{
+    "pages":["src/pages/index/index"],
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "practise",
+        "navigationBarTextStyle":"black"
+    }
+}

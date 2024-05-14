@@ -1,0 +1,13 @@
+<view>
+    <block wx:for="{{currentItems}}" wx:key="recyclerKey">
+        <recyclable>
+            <recycler-item/>
+        </recyclable>
+    </block>
+</view>
+<view>
+    <block wx:for="{{regions}}" wx:key="index">
+        <view></view>
+        <view></view>
+    </block>
+</view>
