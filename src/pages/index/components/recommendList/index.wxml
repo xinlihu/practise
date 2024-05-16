@@ -3,8 +3,8 @@
 </view>
 <view>
     <recycler-list 
-        init-data="{{}}"
-        bind:loaddata="loadMore"
+        init-data="{{recommendListData}}"
+        class="recycler"
     />
 </view>
 
