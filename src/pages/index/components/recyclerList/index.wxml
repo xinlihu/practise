@@ -1,13 +1,19 @@
 <view>
     <block wx:for="{{currentItems}}" wx:key="recyclerKey">
-        <view class="renderItem">
-            {{item.title}}
+        <view 
+            class="absolute"
+            style="transform:translate(0,{{item.origin.offset}}rpx);width:100%;z-index:1;"
+        >
+            <view style="width:100%;height:120rpx;padding-bottom:30rpx;text-align:center;">{{item.origin.data.title}}</view>
         </view>
     </block>
 </view>
 <view>
     <block wx:for="{{regions}}" wx:key="index">
-        <view></view>
-        <view></view>
+        <view
+            class="absolute observer"
+            data-index="{{index}}"
+            style="transform:translate(0rpx,{{item.offset}}rpx);width:1px;height:{{item.height}}rpx;visibility:hidden;"
+        ></view>
     </block>
 </view>

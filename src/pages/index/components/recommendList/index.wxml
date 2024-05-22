@@ -5,6 +5,8 @@
     <recycler-list 
         init-data="{{recommendListData}}"
         class="recycler"
+        item-layout="{{layoutManager}}"
+        item-key="{{itemKey}}"
     />
 </view>
 

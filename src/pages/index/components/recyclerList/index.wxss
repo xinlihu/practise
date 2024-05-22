@@ -1,8 +1,4 @@
-.renderItem{
-    display:flex;
-    align-items:center;
-    height:80rpx;
-    margin-bottom:20rpx;
-    width:100%;
-    background:green;
+.absolute{
+    position:absolute;
 }
+
