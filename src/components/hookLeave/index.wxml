@@ -1,0 +1,2 @@
+<page-container show="{{show}}" bind:beforeleave="onBeforeLeave" overlay="{{false}}" 
+        zIndex="-99" customStyle="display:none;pointer-events:none;" overlayStyle="display:none;pointer-events:none;"/>

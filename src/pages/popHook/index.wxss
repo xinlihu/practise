@@ -1,0 +1,8 @@
+.place-bg{
+    background:red;
+    width:100%;
+    height:120vh;
+}
+page{
+    position: static !important;
+}

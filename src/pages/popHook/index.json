@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "pop-base":"../../components/pop/index",
+        "hook-leave":"../../components/hookLeave/index"
+    }
+  }

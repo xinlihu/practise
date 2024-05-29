@@ -1,0 +1,6 @@
+{
+    "component":true,
+    "usingComponets":{
+        "pop":"../pop/index"
+    }
+}

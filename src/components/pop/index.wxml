@@ -1,0 +1,10 @@
+<template name="pop">
+    <view class="bitc-pop {{show?'bitc-pop-show':''}}">
+        <view class="bitc-pop__mask" bind:tap="handleMaskClick"/>
+        <view class="bitc-pop_container" >
+            <slot/>
+        </view>
+    </view>
+</template>
+
+<template is="pop" data="{{show}}"></template>

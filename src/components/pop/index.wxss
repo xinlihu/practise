@@ -1,0 +1,32 @@
+.bitc-pop{
+    --bottom:0;
+    display:none;
+}
+.bitc-pop-show{
+    display:block;
+}
+.bitc-pop__mask{
+    z-index:1000;
+    display:block;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(0,0,0,0.8);
+}
+
+.bitc-pop_container{
+    width:100%;
+    z-index:1000;
+    height:calc(100vh - 200rpx);
+    bottom:0;
+    transform:translate3d(-50%,0,0);
+    top:auto;
+    left:50%;
+    opacity:1;
+    position:fixed;
+    transform-origin:center;
+    background:white;
+}
+

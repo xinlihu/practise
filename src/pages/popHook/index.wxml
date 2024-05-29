@@ -1,0 +1,10 @@
+<button bind:tap="openPop" >
+    打开弹窗
+</button>
+<view class="place-bg"></view>
+<block wx:for="{{popShowArr}}">
+<pop-base popId="{{item}}"  show="{{true}}" bind:close="closePop">
+    {{item}}
+</pop-base>
+</block>
+<hook-leave/>

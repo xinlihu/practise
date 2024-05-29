@@ -4,5 +4,11 @@ Page({
     },
     onReachBottom(){
       this.selectComponent('#recommendList').loadMore();
+    },
+    
+    goPopPage(){  
+      wx.navigateTo({
+        url:'../popHook/index'
+      })
     }
 })
