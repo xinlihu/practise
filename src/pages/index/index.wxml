@@ -1,6 +1,7 @@
 <view>
     <view>导航区域</view>
-    <button bind:tap="goPopPage">弹窗演示</button>
+    <button bind:tap="goPopPage">弹窗返回拦截</button>
+    <button bind:tap="goNavigator">吸顶效果</button>
 </view>
 
 <recommend-list id="recommendList">

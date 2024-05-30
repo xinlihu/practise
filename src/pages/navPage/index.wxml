@@ -1,0 +1,24 @@
+<!-- 吸顶效果实现
+1、添加吸顶元素，跟页面元素相同。
+2、scroll-view滚动时候，使用wxs代理，滚动距离超过阈值后，开始渐变显示吸顶元素，直到显示为不透明。
+3、要设置throttle为false，即关闭节流。
+ -->
+<wxs module="tools" src="./tools.wxs"></wxs> 
+<view class="header-fixed-top-wrapper hidden-header-fixed flex-align-center" style="height:200rpx;background:red;">吸顶元素</view>
+<scroll-view class="scroll-container" 
+    scroll-y="{{true}}"
+    scroll-top="{{0}}"
+    scroll-with-animation="{{false}}"
+    enhanced="{{true}}"
+    show-scrollbar="{{false}}"
+    throttle="{{false}}"
+    bounces="{{false}}"
+    scroll-anchoring="{{true}}"
+    fast-deceleration="{{false}}"
+    enable-flex="{{true}}"
+    bindscroll="{{tools.scroll}}"
+    enable-passive="{{true}}"
+>
+    <view class="flex-align-center" style="height:200rpx;background:yellow;">导航区域</view>
+    <view style="height:120vh;background:green;">页面内容</view>
+</scroll-view>

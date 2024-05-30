@@ -16,7 +16,6 @@ class Task{
     }
     dispatch(){
         this.status = TaskStatus.Running;
-        debugger;
         this.run();
     }
 }
@@ -44,7 +43,6 @@ export function executeTask(key){
 }
 function dispatchTask(tag){
     let task;
-    debugger;
     tags.push(tag);
     task = tasks[tag];
     tags.pop();

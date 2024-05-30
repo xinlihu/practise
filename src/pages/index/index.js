@@ -10,5 +10,10 @@ Page({
       wx.navigateTo({
         url:'../popHook/index'
       })
+    },
+    goNavigator(){
+      wx.navigateTo({
+        url:'../navPage/index'
+      })
     }
 })

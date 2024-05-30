@@ -1,0 +1,19 @@
+.flex-align-center{
+    display:flex;
+    align-items:center;
+}
+.header-fixed-top-wrapper{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    width:100%;
+    tranform:translateY(100%);
+}
+.hidden-header-fixed{
+    visibility:hidden;
+    pointer-events: none;
+}
+.scroll-container{
+    height:100vh;
+}

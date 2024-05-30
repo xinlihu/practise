@@ -1,7 +1,8 @@
 {
     "pages":[
         "src/pages/index/index",
-        "src/pages/popHook/index"
+        "src/pages/popHook/index",
+        "src/pages/navPage/index"
     ],
     "window":{
         "backgroundTextStyle":"light",

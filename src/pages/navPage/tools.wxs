@@ -1,0 +1,30 @@
+
+var container = null;
+var scroll = function(event, ownerInstance){
+    if(!ownerInstance){
+        return;
+    }
+    if(event && event.detail){
+        if(!container){
+            container=ownerInstance.selectComponent('.header-fixed-top-wrapper');
+        }
+        var startAnimateTop = 30;
+        var speed = 10;
+        var scrollTop = event.detail.scrollTop - startAnimateTop;
+        console.log(event.detail.scrollTop);
+        if(event.detail.scrollTop > startAnimateTop){
+            container.removeClass('hidden-header-fixed');
+            container.setStyle({
+                'background-color':'rgba(255,255,255,'+Math.max(0,scrollTop/speed)+')'
+            });
+        }else{
+            container.addClass('hidden-header-fixed');
+        }
+    }
+    ownerInstance.callMethod('onScroll',event);
+    return false;
+}
+
+module.exports = {
+    scroll: scroll,
+}
